@@ -1,0 +1,48 @@
+Tests that need to be analysed/ debug
+***************************************
+TestUserSetupBusinessProcess
+HistoryLogTestMethod
+***************************************
+Need to rerun after copying the indexes folder
+***************************************
+EnsureAttachmentsAreIndexedPromptly
+EnsureFindingsAreGeneratingWithCorrectCrossReferences
+QuestionnareQuestionTest
+***************************************
+Test Cleanup failure - Tests that failed due to configuration problem - adding hostname twice
+***************************************
+PrepareVendorsApplication
+DeleteProblematicReports
+BuildEnvironment
+***************************************
+Tests that can be ignored because they can be due to timing issue and the other DDE test got successfully executed which tests the same capability of sending notification
+These tests on production run quicky so they sleep accordingly and get the db updates but where as our on demand environments are quite slow which made the updates inconsistent with the expectations
+***************************************
+NotificationByRecordStatus
+NotificationByFieldValue
+DDEGN_TC7106093_Application
+DDEGN_TC7106070_Application
+DDEGN_TC7106066_Application
+***************************************
+Tests that fail due to lack of connection with the LDAP Server
+***************************************
+LDAPTestOne
+LDAPTestMockDomain
+DomainImport
+***************************************
+Tests that fail due to lack of updates
+***************************************
+SmokeTestOne
+***************************************
+Tests that failed due to deadlock of resources
+***************************************
+RetireEveryApplicationAndQuestionnaire
+***************************************
+Tests for which we need to check the package insatallation logs in UI which are mostly not failures
+***************************************
+InstallTheMailMergeApplication
+InstallCFRApplicationWithNoErrors
+***************************************
+Tests that failed due to timeout
+***************************************
+PackagingTestDriver
